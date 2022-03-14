@@ -51,9 +51,16 @@ subprojects{
 
 }
 
-project(':module-api'){
-    dependencies{
+project(':module-api') {
+    dependencies {
         implementation project(':module-core')
     }
 }
 
+project(':module-web'){
+    dependencies{
+        implementation project(':module-core')
+        implementation project(':module-api')
+    }
+
+}

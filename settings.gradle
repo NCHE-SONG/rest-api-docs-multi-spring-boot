@@ -1,4 +1,5 @@
 rootProject.name = 'rest-api-docs'
 include 'module-core'
 include 'module-api'
+include 'module-web'
 
