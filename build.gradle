@@ -40,27 +40,17 @@ subprojects{
     tasks.named('test') {
         useJUnitPlatform()
     }
-
-    bootJar{
-        enabled(false)
-    }
-
-    jar{
-        enabled(true)
-    }
-
 }
 
-project(':module-api') {
+project(':_api') {
     dependencies {
-        implementation project(':module-core')
+        implementation project(path: ':_core', configuration: 'default')
     }
 }
 
-project(':module-web'){
+project(':_web'){
     dependencies{
-        implementation project(':module-core')
-        implementation project(':module-api')
+        implementation project(path: ':_api', configuration: 'default')
     }
 
 }
