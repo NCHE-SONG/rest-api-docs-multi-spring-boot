@@ -1,5 +1,4 @@
-rootProject.name = 'rest-api-docs'
-include 'module-core'
-include 'module-api'
-include 'module-web'
-
+rootProject.name = 'api-docs-java'
+include '_core'
+include '_api'
+include '_web'
