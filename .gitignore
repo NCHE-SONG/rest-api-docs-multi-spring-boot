@@ -1,12 +1,10 @@
+README.md
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-module-web/build/
-module-api/build/
-module-core/build/
-
+**/build/
 
 ### STS ###
 .apt_generated
