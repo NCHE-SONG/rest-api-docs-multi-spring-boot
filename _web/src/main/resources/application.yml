@@ -1,1 +1,16 @@
+api:
+  version: v1
 
+springdoc:
+  version: ${api.version}
+  api-docs:
+    path: /api-docs/${api.version}
+  default-consumes-media-type: application/json
+  default-produces-media-type: application/json
+  swagger-ui:
+    operations-sorter: alpha
+    tags-sorter: alpha
+    path: /${api.version}/swagger.html
+    disable-swagger-default-url: true
+  paths-to-match:
+    - /api/${api.version}/**
