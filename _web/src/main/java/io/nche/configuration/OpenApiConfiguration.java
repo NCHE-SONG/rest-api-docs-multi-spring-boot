@@ -1,4 +1,4 @@
-package io.nche.comfiguration;
+package io.nche.configuration;
 
 import io.swagger.v3.oas.models.ExternalDocumentation;
 import io.swagger.v3.oas.models.OpenAPI;
